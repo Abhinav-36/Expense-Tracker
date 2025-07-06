@@ -11,9 +11,9 @@ export default function Card({text,value}){
 
     return(
         <div className={styles['card']}>
-            <h1 className={styles['heading']}>{text==="Expenses" ? "Expenses" : "Wallet Balance"}: 
+            <h2 className={styles['heading']}>{text==="Expenses" ? "Expenses" : "Wallet Balance"}: 
                 <span className={text === "Expenses" ? styles['expenses-amount'] : styles['balance-amount']}> ₹{value}</span>
-            </h1>
+            </h2>
             <Button 
                 text={text === "Expenses" ? "+ Add Expense" : "+ Add Income"}
                 background={text === "Expenses" ? "gradientRed" : "gradientGreen"}
