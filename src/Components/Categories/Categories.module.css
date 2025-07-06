@@ -1,0 +1,30 @@
+.food{
+    height: 8px;
+    width: 25px;
+    background-color: #A000FF;
+}
+
+.entertainment{
+    height: 8px;
+    width: 25px;
+    background-color: #FF9304;
+}
+
+.travel{
+    height: 8px;
+    width: 25px;
+    background-color: #FDE006;
+}
+
+.category{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}

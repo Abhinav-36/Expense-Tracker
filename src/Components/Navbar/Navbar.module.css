@@ -1,0 +1,16 @@
+.header{
+    /* padding: 10px 0px; */
+    /* font-size: 16px; */
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+}
+
+@media screen and (max-width: 849px) {
+    .header{
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,61 @@
+.card{
+    height: 180px;
+    width: 30vw;
+    background-color: #9b9b9b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.heading{
+    font-weight: 400;
+    font-style: Regular;
+}
+
+.expenses-amount{
+    font-weight: 700;
+    color: #f4bb4a;
+}
+
+.add-expense-btn{
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    background:  linear-gradient(to right, #ff7a7a, #ff3d3d);
+    cursor: pointer;
+    
+}
+
+.balance-amount{
+    font-weight: 700;
+    color: #9DFF5B;
+}
+
+.balance-btn{
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #b4dc51, #89e148);
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 849px) {
+    .card{
+        width: 100%;
+    }
+}
+
+
