@@ -8,7 +8,7 @@ import TransactionBody from './TransactionBody';
 const Transactions = () => {
     return (
         <div className={styles['Transactions']}>
-            <h2 className={styles['heading']}>Transactions</h2>
+            <h2 className={styles['heading']}>Recent Transactions</h2>
             <TransactionBody />
         </div>
     );
