@@ -86,7 +86,7 @@ const ModalForm = props => {
     const expenseAndEditInput = () => {
         return (
             <div className='formInputsDiv'>
-                <input 
+                <input
                 required
                 value={formData.name}
                 className="formInput" 
