@@ -18,13 +18,12 @@ function App() {
   const [transactionData, setTransactionData] = useState([]);
   const initialRender = useRef(true);
 
-  useEffect(()=>{
-    if(initialRender.current)  onLoad();
-
-    return(() => {
-      initialRender.current = false;
-    })
-  }, [])
+  useEffect(() => {
+  if (typeof window !== 'undefined' && initialRender.current) {
+    onLoad();
+    initialRender.current = false; // Move this here to ensure it's only set after client-side load
+  }
+}, [])
 
   useEffect(() => {
     if (typeof window !== 'undefined' && !initialRender.current) {
