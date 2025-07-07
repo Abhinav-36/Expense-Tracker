@@ -1,13 +1,13 @@
 import React from 'react';
 //styles
-import "./Transactions.module.css";
+import styles from "./Transactions.module.css";
 //components
 import TransactionBody from './TransactionBody';
 
 const Transactions = () => {
     return (
-        <div className='Transactions'>
-            <h2>Recent Transactions</h2>
+        <div className={styles['Transactions']}>
+            <h2 className={styles['heading']}>Transactions</h2>
             <TransactionBody />
         </div>
     );
