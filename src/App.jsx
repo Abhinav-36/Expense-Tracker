@@ -26,12 +26,11 @@ function App() {
     })
   }, [])
 
-  useEffect(()=> {
-    //save data to local storage and if it is initial render skip saving
-    if(!initialRender.current) localStorage.setItem("expenses", JSON.stringify({money, transactionData}));
-    // console.log(transactionData);
-    
-  }, [money, transactionData])
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !initialRender.current) {
+      localStorage.setItem("expenses", JSON.stringify({ money, transactionData }));
+    }
+  }, [money, transactionData]);
 
   //functions
   const onLoad = () => {
@@ -46,7 +45,7 @@ function App() {
   
 
   return (
-    <main className='App'>
+    <main className={styles['app']}>
       <Balance.Provider value={[money, setMoney]}>
       <TransactionsData.Provider value={[transactionData, setTransactionData]}>
         <Navbar />
