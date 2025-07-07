@@ -93,7 +93,8 @@ const ModalForm = props => {
                 onChange={handleChange} 
                 placeholder='Title' 
                 type='text' 
-                name='name'
+                name="name"
+                autoComplete='name'
                 autoFocus
                 />
                 <input 
@@ -109,9 +110,9 @@ const ModalForm = props => {
                 value={formData.category} 
                 className="formInput" 
                 onChange={handleChange} 
-                placeholder='Select Category' 
-                name='category'>
-                    <option value={null}>Select Category</option>
+                name="category"
+                aria-label="Category">
+                    <option value={null} >Select Category</option>
                     <option value="food">Food</option>
                     <option value="entertainment">Entertainment</option>
                     <option value="travel">Travel</option>
