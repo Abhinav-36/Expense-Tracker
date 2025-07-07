@@ -1,11 +1,16 @@
+import React from 'react';
+//styles
+import "./Transactions.module.css";
+//components
+import TransactionBody from './TransactionBody';
 
-
-
-export default function Transactions(){
-
+const Transactions = () => {
     return (
-        <div className="transaction">
-            
+        <div className='Transactions'>
+            <h2>Recent Transactions</h2>
+            <TransactionBody />
         </div>
     );
-}
+};
+
+export default Transactions;
