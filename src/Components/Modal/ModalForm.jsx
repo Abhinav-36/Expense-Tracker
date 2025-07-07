@@ -37,8 +37,13 @@ const ModalForm = props => {
         })
     }
     const handleChange = (event) => {
-        const key = (event).target.name, value = (event).target.value;
+        let key = (event).target.name, value = (event).target.value;
+        if(key === "title"){
+            key = "name";
+        }
+        // console.log(key,value);        
         setFormData({...formData, [key]: value });
+        
     }
     const handleSubmit = (event) => {
         event.preventDefault();
