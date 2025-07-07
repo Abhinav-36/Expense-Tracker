@@ -36,7 +36,7 @@ function App() {
   //functions
   const onLoad = () => {
     //load data from local storage if present
-    const localData = localStorage.getItem("allData");
+    const localData = localStorage.getItem("expenses");
     if(localData){
       const {money, transactionData} = JSON.parse(localData);
       setMoney(money);
