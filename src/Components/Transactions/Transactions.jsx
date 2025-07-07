@@ -4,6 +4,7 @@ import styles from "./Transactions.module.css";
 //components
 import TransactionBody from './TransactionBody';
 
+
 const Transactions = () => {
     return (
         <div className={styles['Transactions']}>

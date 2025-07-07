@@ -49,14 +49,23 @@ const TransactionsBody = () => {
         }
     }
     return (
-        <div className='TransactionBody'>
-            <div className='transactionBodyUpper'>
-                <div className='transactionPage'>{displayTransactions()}</div>
-            </div>
-            <div className='transactionBodylower'>
-                <PageNavigateBar key={"pageNavigate"} pages={pages} updatePage={updatePage} />
-            </div>
-        </div>
+                transactionData.length !== 0 ? (
+                    <>
+                        <div className='TransactionBody'>
+                        <div className='transactionBodyUpper'>
+                            <div className='transactionPage'>{displayTransactions()}</div>
+                        </div>
+                        <div className='transactionBodylower'>
+                            <PageNavigateBar key={"pageNavigate"} pages={pages} updatePage={updatePage} />
+                        </div>
+                        </div>
+                    </>
+                ) : (
+                    <div className='notrans'>
+                        No Transactions!
+                    </div>
+                )
+        
     );
 };
 

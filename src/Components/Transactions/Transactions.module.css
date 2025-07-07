@@ -2,16 +2,13 @@
 .Transactions{
     display: flex;
     flex-direction: column;
+    width: 100%;
     flex: 1;
 }
 
-.heading{
-    font-size: 30px;
-    font-weight: 400;
-    font-style: italic;
-}
 
-
-@media screen and (min-width: 780px) {
-   
+@media screen and (min-width: 849px) {
+    .Transactions{
+        width: 60%;
+    }
 }

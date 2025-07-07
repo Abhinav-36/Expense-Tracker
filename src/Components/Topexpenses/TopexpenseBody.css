@@ -1,0 +1,9 @@
+.TopExpensesBody{
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    border-radius: 0.75rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
